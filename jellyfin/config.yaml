@@ -17,3 +17,8 @@ map:
 options: {}
 schema: {}
 host_network: false
+panel_iframe:
+  jellyfin:
+    title: Jellyfin
+    icon: mdi:play-circle
+    url: http://homeassistant.local:8096
