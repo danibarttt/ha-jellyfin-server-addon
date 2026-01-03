@@ -1,0 +1,19 @@
+name: Jellyfin Server
+version: "1.0.0"
+slug: jellyfin
+description: Jellyfin Server for Home Assistant OS
+url: https://github.com/danibarttt/ha-jellyfin-server-addon
+arch:
+  - aarch64
+startup: services
+boot: auto
+ports:
+  8096/tcp: 8096
+ports_description:
+  8096/tcp: Jellyfin web interface
+map:
+  - media:rw
+  - config:rw
+options: {}
+schema: {}
+host_network: false
