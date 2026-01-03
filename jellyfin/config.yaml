@@ -1,5 +1,5 @@
 name: Jellyfin Server
-version: "1.0.0"
+version: "1.0.1"
 slug: jellyfin
 description: Jellyfin Server for Home Assistant OS
 url: https://github.com/danibarttt/ha-jellyfin-server-addon
