@@ -1,5 +1,5 @@
 name: Jellyfin Server
-version: "1.0.2"
+version: "1.0.3"
 slug: jellyfin
 description: Jellyfin Server for Home Assistant OS
 url: https://github.com/danibarttt/ha-jellyfin-server-addon
@@ -14,6 +14,11 @@ ports_description:
 map:
   - media:rw
   - config:rw
-options: {}
-schema: {}
+"options": {
+  "factory_reset": false
+},
+"schema": {
+  "factory_reset": "bool"
+},
+"backup": true
 host_network: false
