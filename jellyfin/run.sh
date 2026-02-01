@@ -1,9 +1,15 @@
 #!/usr/bin/with-contenv bashio
 set -e
 
+JELLYFIN_ROOT="/data/jellyfin"
+
 bashio::log.info "Jellyfin Server is starting..."
 
-JELLYFIN_ROOT="/data/jellyfin"
+if bashio::config.true 'factory_reset'; then
+  bashio::log.warning "Factory reset requested — deleting all Jellyfin data"
+  rm -rf "$JELLYFIN_ROOT"
+  mkdir -p "$JELLYFIN_ROOT"
+fi
 
 mkdir -p \
   "$JELLYFIN_ROOT/data" \
