@@ -20,5 +20,5 @@ map:
 "schema": {
   "factory_reset": "bool"
 },
-"backup": true
+"backup": true,
 host_network: false
